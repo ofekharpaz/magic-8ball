@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+body {
+    font-family: 'Rubik';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #fa8fc1, #c74084);
+    /* background-color: #ff8fc1; Background color for better visibility */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+#magic8ball {
+    width: 100%; /* Adjust the size to 70% */
+}
+.shake-animation {
+    animation: shake 0.5s ease-in-out;
+}
+
+#triangle {
+    width: 100px;
+    height: 86.6px; /* 0.866 * Width in order to have an equilateral triangle [0.866 = (sqrt(3)/2)] */
+    background-image: linear-gradient(to bottom, #87CEEB, #FF69B4);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(-10px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(10px);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.slottt-machine-recipe {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 100px;
+  }
+  
+  .slottt-machine-recipe__mask {
+      width: 100%;
+      height: 150px;
+      overflow: hidden; 
+      position: relative;
+      display: inline-block;
+      margin-bottom: -40px;
+  }
+  
+  .slottt-machine-recipe__items_container {
+      position: absolute;
+  }
+  
+  .slottt-machine-recipe__item {
+      min-height: 150px;
+      max-height: 150px;
+      margin: 0px;
+      padding: 0px;
+      background-size: contain;
+  }
+  
+  .recipe_if, .recipe_then {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+  }
+  
+  .tagline {
+    font-weight: normal;
+    font-size: 24px;
+  }
+  
+  a {
+   font-weight: bold;
+   text-decoration: none;
+   color: #33CCFF;
+  }
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  button.learn-more {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.learn-more::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.learn-more:hover {
+    background: #ffe9e9;
+    transform: translate(0, 0.25em);
+  }
+  button.learn-more:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+  }
+  button.learn-more:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+  }
+  button.learn-more:active::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+  }
+  
+  /*# sourceMappingURL=btn.css.map */
+  
+  
